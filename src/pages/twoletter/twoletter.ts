@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
- * Generated class for the SubmitreviewPage page.
+ * Generated class for the TwoletterPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -10,16 +10,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage()
 @Component({
-  selector: 'page-submitreview',
-  templateUrl: 'submitreview.html',
+  selector: 'page-twoletter',
+  templateUrl: 'twoletter.html',
 })
-export class SubmitreviewPage {
+export class TwoletterPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad SubmitreviewPage');
+    console.log('ionViewDidLoad TwoletterPage');
   }
 
 }

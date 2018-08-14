@@ -2,15 +2,13 @@ import { Component, ViewChild } from '@angular/core';
 import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-
+import { TextToSpeech } from '@ionic-native/text-to-speech';
 
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
-import { PopoverPage } from '../pages/popover/popover';
-import { AboutPage } from '../pages/about/about';
-import { ViewcontactPage } from '../pages/viewcontact/viewcontact';
-import { LogsPage } from '../pages/logs/logs';
-import { HomecontentsPage } from '../pages/homecontents/homecontents';
+import { AlphabetsPage } from '../pages/alphabets/alphabets';
+import { NumbersPage } from '../pages/numbers/numbers';
+import { TwoletterPage } from '../pages/twoletter/twoletter';
 
 @Component({
   templateUrl: 'app.html'
@@ -19,20 +17,18 @@ export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
   rootPage: any = HomePage;
-  displayPage: any = AboutPage;
 
   pages: Array<{title: string, component: any}>;
 
   constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
     this.initializeApp();
-    this.statusBar.backgroundColorByHexString('#9E1487');
 
     // used for an example of ngFor and navigation
     this.pages = [
       { title: 'Home', component: HomePage },
-      { title: 'List', component: ListPage },
-      { title: 'About', component: AboutPage},
-      { title: 'About', component: ViewcontactPage},
+      { title: 'Alphabets', component: AlphabetsPage },
+      { title: 'Numbers', component: NumbersPage },
+      { title: 'Two Letter Words', component: TwoletterPage },
     ];
 
   }
@@ -45,11 +41,6 @@ export class MyApp {
       this.splashScreen.hide();
     });
   }
-
-  // loadAboutPage()
-  // {
-  //   this.navCtrl.push(displayPage);
-  // }
 
   openPage(page) {
     // Reset the content nav to have just this page

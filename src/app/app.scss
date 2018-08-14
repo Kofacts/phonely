@@ -15,13 +15,19 @@
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
 
-.scroll-content
-{
-	overflow-y: scroll !important;
+ion-menu{
+ 
 }
-.searchbar-md .searchbar-input
+.toolbar-background-md
 {
-	width: 100vw !important;
-	border: 2px solid #F5F5F5;
-	
+	background: #5A32BB !important;
+	color: white !important;
+}
+.toolbar-title-md
+{
+	color:white !important;
+}
+.back-button.show-back-button
+{
+	color:white !important;
 }
