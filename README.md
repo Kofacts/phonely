@@ -6,4 +6,4 @@ Children in this modern era now do alot with gadgets, some even know their way a
 ## Screenshots
 ![Alt text](https://raw.githubusercontent.com/Kofacts/phonely/master/screenshots/WhatsApp%20Image%202018-08-14%20at%208.59.25%20AM.jpeg "Onboard Page")
 ![Alt text](https://raw.githubusercontent.com/Kofacts/phonely/master/screenshots/WhatsApp%20Image%202018-08-14%20at%208.59.25%20AM%20(1).jpeg "English Alphabets")
-![Alt text](https://raw.githubusercontent.com/Kofacts/phonely/master/screenshots/WhatsApp%20Image%202018-08-14%20at%208.59.25%20AM%20(1).jpeg "English Alphabets")
+![Alt text](https://raw.githubusercontent.com/Kofacts/phonely/master/screenshots/WhatsApp%20Image%202018-08-14%20at%208.59.25%20AM%20(2).jpeg "English Alphabets")
