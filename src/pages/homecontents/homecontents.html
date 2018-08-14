@@ -1,0 +1,36 @@
+<ion-content>
+<ion-row style="width:100vw; margin-left: -9px; width: 100vw; margin-top: -5px">
+
+    <ion-searchbar (ionInput)="getItems($event)"  placeholder="Search contacts .." style="font-size: 10px; width: 99vw !important; margin-left: -15px; margin-top: -15px;">
+
+    </ion-searchbar>
+ </ion-row>
+
+<div>
+    <ion-row>
+      <!-- beginining of contacts -->
+      <ion-col col-12 style="margin-left: -11px" *ngFor="let contacts of allContacts">
+        <ion-card (click)="viewContact(contacts)" style="width: 100%; float: center">
+            <ion-card-header>
+                <span style="font-size: 17px; opacity: .6">{{contacts.displayName}}</span>
+            </ion-card-header>
+
+            <ion-card-content>
+              <ion-row style="margin-right: 0px"> 
+                <ion-col col-8 style="margin-top: -14px">
+                  <span style="margin-top: -10px !important">{{contacts.phoneNumbers[0].value}}</span>
+                  <br>
+                  <span style="font-size: 10px; opacity: .6">{{determineNetwork(contacts.phoneNumbers[0].value)}}</span>
+                </ion-col>
+
+                <ion-col col-4 text-right style="margin-right: -200px !important; padding-right: -200px">
+                  <img src="{{determineNetwork(contacts.phoneNumbers[0].value)}}" style="width: 40px; height: auto; margin-top: -20px; margin-left: 32px;">
+                </ion-col>
+              </ion-row>
+            </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+    </ion-row>
+  </div>
+</ion-content>

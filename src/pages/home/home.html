@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+   
+    <div style="float:right !important; font-size:20px; margin-right:10px">
+    <ion-icon name="help-circle" color="white" (click)="showAboutPage()" style="margin-right: 23px; cursor: pointer;" ></ion-icon>
+    <ion-icon name="more" style="color:white; cursor: pointer;" (click)="presentPopover($event)"></ion-icon>
+    </div>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <!-- create a two column type of tab here -->
+  <style type="text/css">
+    .searchbar-md .searchbar-input
+    {
+      width: 99vw !important;
+    }
+  </style>
+
+<super-tabs style="width:100vw; margin-left: -16px; margin-top: -14.9px !important" height="100%" scrollTabs="true" color="primary" toolbarBackground="primary" toolbarColor="white" indicatorColor="indicator">
+  <super-tab [root]="tab1Root" title="CONTACTS" ></super-tab>
+  <super-tab [root]="tab2Root" title="CALL LOGS" ></super-tab>
+   <super-tab [root]="tab2Root" title="SHORT CODES" style="float: right !important"></super-tab>
+</super-tabs>
+
+</ion-content>
